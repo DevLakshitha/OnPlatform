@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OnShopping", "OnShopping", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnShoppingWeb", "OnShopping\OnShoppingWeb\OnShoppingWeb.csproj", "{8603044C-B21F-4789-8AE8-578616F1E5E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnShoppingApp", "OnShopping\OnShoppingApp\OnShoppingApp.csproj", "{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{8603044C-B21F-4789-8AE8-578616F1E5E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8603044C-B21F-4789-8AE8-578616F1E5E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8603044C-B21F-4789-8AE8-578616F1E5E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D0FD6563-B892-42D2-8DFC-F79AF4A37A5C} = {6516FC88-7FCD-430C-85AB-DA0849BA6329}
 		{8603044C-B21F-4789-8AE8-578616F1E5E7} = {6C7B413C-70FF-4F09-B5B9-71926BAE4D44}
+		{70FEA1C6-1B32-460B-85DF-BF0E1EFE971D} = {6C7B413C-70FF-4F09-B5B9-71926BAE4D44}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48823B35-915D-465F-A3AA-4F77C202B4F0}
