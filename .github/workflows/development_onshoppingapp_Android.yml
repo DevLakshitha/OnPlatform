@@ -1,4 +1,4 @@
-name: Build .Net MAUI APP - OnShoppingApp
+name: Build .Net MAUI APP - OnShoppingApp Android
 
 on:
   push:
