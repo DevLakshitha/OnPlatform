@@ -2,9 +2,7 @@ name: Build .Net MAUI APP - OnShoppingApp Android
 
 on:
   push:
-    branches: [ "development" ]
-  pull_request:
-    branches: [ "development" ]
+    branches: [ "stagin" ]
 
 jobs:
   build:
