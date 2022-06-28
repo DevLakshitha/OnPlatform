@@ -38,7 +38,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Staging'
+      name: 'staging'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -52,6 +52,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'OnPlatformIDServerStaging'
-          slot-name: 'Staging'
+          slot-name: 'staging'
           publish-profile: ${{ secrets.AzureAppService_PublishProfile_bf62f3a937d8445aa7a4401c2e6f75e5 }}
           package: .
