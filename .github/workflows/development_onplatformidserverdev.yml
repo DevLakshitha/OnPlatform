@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - OnPlatformIdServerDev
 on:
   push:
     branches:
-      - development
+      - stagin
   workflow_dispatch:
 
 jobs:
