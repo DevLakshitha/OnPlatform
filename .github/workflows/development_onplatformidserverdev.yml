@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - OnPlatformIdServerDev
 on:
   push:
     branches:
-      - stagin
+      - staging
   workflow_dispatch:
 
 jobs:
@@ -38,7 +38,7 @@ jobs:
     runs-on: windows-latest
     needs: build
     environment:
-      name: 'Production'
+      name: 'Staging'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
@@ -52,6 +52,6 @@ jobs:
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'OnPlatformIdServerDev'
-          slot-name: 'Production'
+          slot-name: 'Staging'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_151A4A5D8EEF4AFF8D7524C7E0F927D5 }}
           package: .
