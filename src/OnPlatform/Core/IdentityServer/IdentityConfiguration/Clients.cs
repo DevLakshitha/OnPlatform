@@ -19,12 +19,12 @@ namespace IdentityServer.IdentityConfiguration
                 },
                 new Client
                 {
-                    ClientId = "oidcMVCApp",
-                    ClientName = "Sample ASP.NET Core MVC Web App",
+                    ClientId = "onShoppingAuth",
+                    ClientName = "OnShopping Mobile App",
                     ClientSecrets = new List<Secret> {new Secret("OnPlatform".Sha256())},
 
                     AllowedGrantTypes = GrantTypes.Code,
-                    RedirectUris = new List<string> {"https://localhost:44346/signin-oidc"},
+                    RedirectUris = new List<string> {"onshopping:/authenticated"},
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
@@ -32,6 +32,10 @@ namespace IdentityServer.IdentityConfiguration
                         IdentityServerConstants.StandardScopes.Email,
                         "role",
                         "onShoppingApi.read"
+                    },
+                    PostLogoutRedirectUris = new List<string>
+                    {
+                        "onshopping:/signout-callback-oidc",
                     },
 
                     RequirePkce = true,
